@@ -1,8 +1,13 @@
 ---
-layout: post
+layout = post
 title: "Metro North Employee Demographics"
+author: "Keith Michael Davis III"
 date: "November 10, 2015"
-output: html_document
+output: 
+html_document:
+  fig_width: 10
+  fig_height: 8
+categories: Metro-North
 ---
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
@@ -145,7 +150,7 @@ db <- mutate(db, AGE = as.numeric(abs(difftime(BIRTHDATE, Sys.time(), units = "d
 
 
 {% highlight r %}
-m <- ggplot(data = db, aes(x = AGE, y = HOURLY_RT)) + geom_point()
+m <- ggplot(data = filter(db, RACE != " "), aes(x = AGE, y = HOURLY_RT, colour = RACE)) + geom_point() + facet_grid(. ~ RACE)
 m
 {% endhighlight %}
 
