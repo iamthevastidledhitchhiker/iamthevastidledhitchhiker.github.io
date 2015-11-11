@@ -4,10 +4,6 @@ title:  "Metro-North Employee Demographics"
 author: keith
 date:   2015-11-10 22:53:35
 categories: Metro-North
-output: 
-  html_document:
-    toc: true
-    toc_depth: 4
 ---
 
 I recently came across a data set that contains detailed employee information at Metro-North Railroad.
