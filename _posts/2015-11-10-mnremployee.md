@@ -1,12 +1,7 @@
 ---
-layout = post
-title: "Metro North Employee Demographics"
-author: "Keith Michael Davis III"
-date: "November 10, 2015"
-output: 
-html_document:
-  fig_width: 10
-  fig_height: 8
+layout: post
+title:  "Metro-North Employee Demographics"
+date:   2015-11-10 22:53:35 -0500
 categories: Metro-North
 ---
 
