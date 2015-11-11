@@ -43,6 +43,20 @@ $on-laptop:        1000px;
     }
 }
 
+//Set avatar layout
+.avatar {
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+}
+
+.gravatar {
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+}
+
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -51,3 +65,4 @@ $on-laptop:        1000px;
         "layout",
         "syntax-highlighting"
 ;
+
