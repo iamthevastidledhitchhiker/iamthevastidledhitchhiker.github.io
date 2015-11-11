@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This blog is dedicated to revealing the world using data and machine learning.
+A blog for data visualization, machine learning, and wandering the digital frontier.
