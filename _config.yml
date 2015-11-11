@@ -19,3 +19,20 @@ github_username:  iamthevastidledhitchhiker
 # Build settings
 markdown: kramdown
 
+# Author Settings
+authors:
+    keith:
+        display_name: Keith M Davis
+        email: keith.m.davis.iii@gmail.com
+        gravatar: 547bcdff629b1c1e52517a104aa45269
+        web: http://iamthevastidledhitchhiker.github.io
+        twitter: keithmdavisiii
+
+        github: iamthevastidledhitchhiker
+    bagel:
+        display_name: Michael Beigelmacher
+        email: brooklynbagel@gmail.com
+        web: http://www.mebeigelmacher.nyc
+        twitter: coaxialbagel
+        github: mbagel
+

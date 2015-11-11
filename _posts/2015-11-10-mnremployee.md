@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Metro-North Employee Demographics"
+post_author: Keith Davis
+post_gravatar: 76dbcc74021b8039f14c7b583978b56d
 date:   2015-11-10 22:53:35
 categories: Metro-North
 ---
