@@ -7,7 +7,7 @@ categories: Offbeat
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
 <br>
-[Go back to Episode I](ffbeat/2015/12/29/exploring_simcity_pt1.html")
+[Go back to Episode I](2015/12/29/exploring_simcity_pt1.html")
 <br>
 
 ## Looking Under the Hood - Continued
