@@ -73,5 +73,3 @@ On my 7th birthday I received a copy of Simcity 2000 Special Edition for Macinto
 <h3>Step 2: Locate Key Statistics Within the .SC2 File</h3>
 <p>As mentioned earlier, <a href="http://djm.cc/simcity-2000-info.txt/" target="_blank">David Moews's guide to .SC2 files from 1995</a> is pretty much the only readily-available .SC2 resource to date. Unfortunately,
 most of the necessary data locations for our analysis are not identified in his guide. <br>Here's where the real work begins...</p>
-
-<h2><a href="http://djm.cc/simcity-2000-info.txt/">Continue to Episode II</a>
