@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Revisiting SimCity 2000 - Episode I"
+title:  "Revisiting SimCity 2000 - Episode II"
 author: keith
-date:   2015-12-29 05:53:35
+date:   2015-12-30 05:00:35
 categories: Offbeat
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
@@ -74,4 +74,4 @@ On my 7th birthday I received a copy of Simcity 2000 Special Edition for Macinto
 <p>As mentioned earlier, <a href="http://djm.cc/simcity-2000-info.txt/" target="_blank">David Moews's guide to .SC2 files from 1995</a> is pretty much the only readily-available .SC2 resource to date. Unfortunately,
 most of the necessary data locations for our analysis are not identified in his guide. <br>Here's where the real work begins...</p>
 
-<h2><a href="http://iamthevastidledhitchhiker.github.io/offbeat/2015/12/30/exploring_simcity_pt2.html/">Continue to Episode II</a>
+<h2><a href="http://djm.cc/simcity-2000-info.txt/">Continue to Episode II</a>
