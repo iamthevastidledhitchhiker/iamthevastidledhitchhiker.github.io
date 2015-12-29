@@ -7,6 +7,8 @@ categories: Offbeat
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
 <br>
-####[Go back to Episode I](offbeat/2015/12/30/exploring_simcity_pt2.html">Continue to Episode II)
-##Looking Under the Hood - Continued
+[Go back to Episode I](offbeat/2015/12/30/exploring_simcity_pt2.html">Continue to Episode II)
+<br>
+
+## Looking Under the Hood - Continued
 In this post I will delve into the details of extracting useful information from our .SC2 file.
