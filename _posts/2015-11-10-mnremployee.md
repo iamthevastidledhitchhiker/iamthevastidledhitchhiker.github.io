@@ -8,14 +8,13 @@ categories: Metro-North
 
 I recently came across a data set that contains detailed employee information at Metro-North Railroad.
 It includes names, addresses, position titles, marital status, military status, and other data that
-could be useful in mapping employee demographics. In this series, I will cover age, ethnic makeup, hourly wages, and map where employees live. 
+could be useful in mapping employee demographics. In this series, I will cover age, ethnic makeup, hourly wages, and map where employees live.
 
 ## Step 1: Setup and Cleaning
-I prefer loading all necessary packages at the start to accomodate the inevitable idea fairy. 
+I prefer loading all necessary packages at the start to accomodate the inevitable idea fairy.
 Also I hate typing require() or library() more than once.
 
 {% highlight r %}
-Sys.setenv(https_proxy="https://118368:baseball34@gray-wsg.mnr.org:8080")
 libs <- c("class", "plyr", "tm", "data.table", "tidyr", "dplyr", "igraph", "ggplot2", "leaflet", "ggmap", "choroplethr")
 lapply(libs, require, character.only = TRUE)
 {% endhighlight %}
@@ -27,10 +26,10 @@ During this step I also used the ggmap package and geocoded concatenated employe
 #Set Options
 options(stringsAsFactors = FALSE)
 biodata_vw <- read.csv("~/Documents/Data Science/MNR - Employee Information/MetroNorthEmployeeApp/biodata_vw.csv", sep="")
-### Clean the data ### 
+### Clean the data ###
 db <- biodata_vw
 db <- filter(db, DESCR10 %in% c("Active","Leave","Leave W/Py"), HOURLY_RT != 0)
-db <- rename(db, "RACE" = DESCR50, "JOB_CAT_SHORT_01" = DESCRSHORT, "JOB_CAT_SHORT_02" = DESCRSHORT1, 
+db <- rename(db, "RACE" = DESCR50, "JOB_CAT_SHORT_01" = DESCRSHORT, "JOB_CAT_SHORT_02" = DESCRSHORT1,
              "MNR_ID" = ALTER_EMPLID, "EMP_STATUS" = DESCR10, "ACTN_REASON" = DESCR1)
 {% endhighlight %}
 
@@ -47,24 +46,24 @@ After doing a lot of cleaning and geocoding we can use the ggplot2 package to fi
 ###General demographics
 #### Age
 We bin employee ages in 5 year intervals to reveal a fairly old company
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-5-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-5-1.png)
 
 #### Ethnic Makeup
 
 
-Metro-North is roughly as diverse as the *entire* United States population, with a much higher representation among African Americans. 
+Metro-North is roughly as diverse as the *entire* United States population, with a much higher representation among African Americans.
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-7-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-7-1.png)
 
 However, the demographic makeup of the New York City Metropolitan Area (NYCMA) is more diverse than the United States. Relative to the NYCMA, African American + Caucasian Americans are over-represented at Metro-North, while Asians and Hispanics are under-represented.
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-8-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-8-1.png)
 
 
-#### Hourly Wage by Ethnicity 
+#### Hourly Wage by Ethnicity
 
 We plot the hourly wage of each employee and facet by their ethnicity
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-9-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-9-1.png)
 
 We capture some summary statistics for the median wage by age.
 
@@ -114,23 +113,23 @@ m_3
 {% endhighlight %}
 
 It helps to plot the summary. First we plot the median by ethnicity and facet by age.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-11-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-11-1.png)
 
 Next, plot the medians grouped by ethnicity.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-12-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-12-1.png)
 
 Finally, faceting by race and plotting by age group reveals that the median wage for African American and Hispanic employees levels off at about 35 years old.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-13-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-13-1.png)
 
 A boxplot and a violin plot both reveal very long tails for Caucasian employees.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-14-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-14-1.png)
 
 For the violin plot, we drop American Indian and Other ethnic categories.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-15-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-15-1.png)
 
 Highly paid corporates aside, how does the distribution look for the rest of MNR employees?
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-1.png) 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-2.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-1.png)
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-2.png)
 
 
 
@@ -140,13 +139,12 @@ We can generate an ethnic heatmap using the ggmap and ggplot2 packages. I have b
 
 ##### Employee Location Overview
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-17-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-17-1.png)
 
 ##### New York City and New Jersey
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-18-1.png) 
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-18-1.png)
 
 ##### Poughkeepsie
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-19-1.png) 
-
+![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-19-1.png)
