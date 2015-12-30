@@ -3,7 +3,6 @@ layout: post
 title:  "Revisiting SimCity 2000 - Episode I"
 author: keith
 date:   2015-12-29 05:53:35
-categories: Offbeat
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
 <br>
@@ -23,7 +22,7 @@ On my 7th birthday I received a copy of Simcity 2000 Special Edition for Macinto
 <h2>Looking Under the Hood</h2>
 <p>We begin by first selecting a city and corresponding .SC2 file to explore. Since the SC2K Special Edition came with a city called "keith", it seems only fitting to start with "keith."
  <figure>
-  <center><img src="http://iamthevastidledhitchhiker.github.io/figs/simcity_ep1/SS_01.jpg" alt="Coincidence?" width = "640"></center>
+  <center><img src="/figs/simcity_ep1/SS_01.jpg" alt="Coincidence?" width = "640"></center>
   <figcaption align="center">An obvious first choice</figcaption>
   </figure>
   We are going to assume that the ironic spelling errors are intentional. We generate our to-do list where upon completion, we should have a better understanding of the city's current performance and where this performance data resides within the .SC2 file: <br><br>
@@ -74,4 +73,4 @@ On my 7th birthday I received a copy of Simcity 2000 Special Edition for Macinto
 <p>As mentioned earlier, <a href="http://djm.cc/simcity-2000-info.txt/" target="_blank">David Moews's guide to .SC2 files from 1995</a> is pretty much the only readily-available .SC2 resource to date. Unfortunately,
 most of the necessary data locations for our analysis are not identified in his guide. <br>Here's where the real work begins...</p>
 
-<h2><a href="/offbeat/2015/12/30/exploring_simcity_pt2.html">Continue to Episode II</a>
+<h2><a href="/2015/12/30/exploring_simcity_pt2.html">Continue to Episode II</a>
