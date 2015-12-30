@@ -68,3 +68,5 @@ Below is an explanation of each summary's purpose:
 ALTM:  Altitude map
 XTER:  Tells whether there is land or water
 {% endhighlight %}
+
+*if this post appears to abruptly end, it's because it's currently being developed. More content will appear later. If not, this message will change.*
