@@ -6,7 +6,7 @@ author: keith
 date:   2015-12-30 05:00:35
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
-[Go back to Episode I](/2015/12/29/exploring_simcity_pt1.html)
+[Go back to Episode I](/2015-12-29-exploring_simcity_pt1/)
 <br>
 
 ##Looking Under the Hood - Continued
