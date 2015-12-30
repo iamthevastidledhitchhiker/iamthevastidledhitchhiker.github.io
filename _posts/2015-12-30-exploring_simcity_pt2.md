@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Revisiting SimCity 2000 - Episode II"
+title:  Revisiting SimCity 2000 - Episode II
+subtitle: A Data Scientist's Approach (cont'd)
 author: keith
 date:   2015-12-30 05:00:35
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
-<br>
 [Go back to Episode I](/2015/12/29/exploring_simcity_pt1.html)
 <br>
 
-## Looking Under the Hood - Continued
+##Looking Under the Hood - Continued
 In this post I will delve into the details of extracting useful information from our .SC2 file.
 
 Directly referencing David Moew's guide...
@@ -100,5 +100,7 @@ Segment     Description
  XTHG:      480 bytes long.
 
 {% endhighlight %}
+
+I placed ALTM, XTER, and XFIR in the "Not Useful" category because for purposes of our analysis, we don't really care about water coverage, slope, or how robust a city's firefighting coverage is. Generally, we assume this to be binary - either a city can fight fires, or it can't. Obviously this is a huge over-simplification, however for the sake of sanity and timeliness, I'd like to first focus on the obvious variables.
 
 ##### _**Note: If this post appears to abruptly end, it's because it's currently being developed. More content will appear later. If not, this message will change.**_

@@ -1,38 +1,144 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# --- Serving options --- #
 
-# Site settings
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (username.github.io) then use these settings:
+url: "http://iamthevastidledhitchhiker.github.io"
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
+
+# Name of website
 title: I Am The Vast Idled Hitchhiker
-email: keith.m.davis.iii@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A blog for data visualization, machine learning, and wandering the digital frontier.
-  <br>"I Am The Vast Idled Hitchhiker" is an anagram of Keith Michael Davis the Third
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: KeithMDavisIII
-github_username:  iamthevastidledhitchhiker
 
-# Build settings
+# Short description of your site
+description: wandering the digital frontier
+
+# --- Navigation bar options --- #
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/avatar-keith.png"
+
+# List of links in the navigation bar
+navbar-links:
+  Home: ""
+  About Me: "aboutme.md"
+  Author's home: "http://iamthevastidledhitchhiker.github.io"
+
+# --- Footer options --- #
+
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Keith M Davis III
+  email: "keithmdavisiii@gmail.com"
+  facebook: Kiril.Mikhail.Imhotep  # eg. daattali
+  github: iamthevastidledhitchhiker   # eg. daattali
+  twitter: KeithMDavisIII   # eg. daattali
+  linkedin: KeithMDavisIII  # eg. "pub/dean-attali/8/946/143"
+  #stackoverflow: yourlink  # eg. "3943160/daattali"
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: true
+  facebook: false
+  email: true
+  twitter: true
+  github: true
+  linkedin: true
+  stackoverflow: false
+
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+#url-pretty: "MyWebsite.com"  
+
+# --- Misc --- #
+
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+#disqus: ""
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: ""
+
+# --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "America/New_York"
 markdown: kramdown
+highlighter: pygments
+permalink: /:year-:month-:day-:title
+paginate: 5
 
-# Author Settings
-authors:
-    keith:
-        display_name: Keith M Davis
-        email: keith.m.davis.iii@gmail.com
-        gravatar: 547bcdff629b1c1e52517a104aa45269
-        web: http://iamthevastidledhitchhiker.github.io
-        twitter: keithmdavisiii
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "default"
 
-        github: iamthevastidledhitchhiker
-    bagel:
-        display_name: Michael Beigelmacher
-        email: brooklynbagel@gmail.com
-        web: http://www.mebeigelmacher.nyc
-        twitter: coaxialbagel
-        github: mbagel
+# Exclude these files from production site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - Vagrantfile
 
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."

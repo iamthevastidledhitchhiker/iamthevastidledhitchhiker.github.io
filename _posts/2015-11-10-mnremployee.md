@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Metro-North Employee Demographics"
+title:  Metro-North Employee Demographics
+subtitle: Nothing too surprising
 author: keith
 date:   2015-11-10 22:53:35
 categories: Metro-North

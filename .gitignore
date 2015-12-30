@@ -1,4 +1,9 @@
+# project
 _site
 .sass-cache
-.jekyll-metadata
-update.sh
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
