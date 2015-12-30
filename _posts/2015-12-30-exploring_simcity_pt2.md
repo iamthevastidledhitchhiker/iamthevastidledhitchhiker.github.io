@@ -63,10 +63,42 @@ XGRP              3328
 CNAM                32  (uncompressed; optional?)
 {% endhighlight %}
 
-Below is an explanation of each segment's purpose:
+Below is an explanation of each segment's purpose. I have separated the segments into three categories: Known & Useful, Known & Not Useful, and Unknown.
+
+**Known & Useful**
 {% highlight text %}
-ALTM:  Altitude map
-XTER:  Tells whether there is land or water
+Segment     Description
+ CNAM:      City name (technically useful, although trivial)
+ MISC:      Miscellaneous city data.
+ XBIT:      Flags for each terrain square identifying access to utilties, water, etc
+ XBLD:      Square content identifier (buildings, trees, rubble, etc)
+ XUND:      Identifies what's underneath each square (subway, pipes, etc)
+XZONE:      Square zoning & density identifier
+ XTXT:      Square Microsimulator flag. (Park System Microsim, Police Microsim, etc)
+ XLAB:      Labels. Label 00 is the Mayor name. (possibly useful)
+ XMIC:      Microsimulator records.
+ XPLC:      Police power
+ XPOP:      Population map
+ XROG:      Rate of growth of population
+ XPLT:      Pollution
+ XVAL:      Property values
+ XCRM:      Crime rate
+ XTRF:      Traffic
 {% endhighlight %}
 
-*if this post appears to abruptly end, it's because it's currently being developed. More content will appear later. If not, this message will change.*
+**Known & Not Useful**
+{% highlight text %}
+Segment     Description
+ ALTM:      Altitude map
+ XTER:      Terrain information for tiles including water coverage and slope.
+ XFIR:      Firefighting power
+{% endhighlight %}
+**Unknown**
+{% highlight text %}
+Segment     Description
+ XGRP:      32*104 bytes long.
+ XTHG:      480 bytes long.
+
+{% endhighlight %}
+
+##### _**Note: If this post appears to abruptly end, it's because it's currently being developed. More content will appear later. If not, this message will change.**_
