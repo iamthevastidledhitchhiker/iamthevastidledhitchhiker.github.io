@@ -63,7 +63,7 @@ XGRP              3328
 CNAM                32  (uncompressed; optional?)
 {% endhighlight %}
 
-Below is an explanation of each summary's purpose:
+Below is an explanation of each segment's purpose:
 {% highlight text %}
 ALTM:  Altitude map
 XTER:  Tells whether there is land or water
