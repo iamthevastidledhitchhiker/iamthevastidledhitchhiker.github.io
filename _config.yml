@@ -28,7 +28,7 @@ avatar: "/img/avatar-keith.png"
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  About Me: "aboutme.md"
+  About Me: "aboutme"
   Author's home: "http://iamthevastidledhitchhiker.github.io"
 
 # --- Footer options --- #

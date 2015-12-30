@@ -47,18 +47,18 @@ After doing a lot of cleaning and geocoding we can use the ggplot2 package to fi
 ###General demographics
 #### Age
 We bin employee ages in 5 year intervals to reveal a fairly old company
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-5-1.png)
+![center](/figs/mnremployee/unnamed-chunk-5-1.png)
 
 #### Ethnic Makeup
 
 
 Metro-North is roughly as diverse as the *entire* United States population, with a much higher representation among African Americans.
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-7-1.png)
+![center](/figs/mnremployee/unnamed-chunk-7-1.png)
 
 However, the demographic makeup of the New York City Metropolitan Area (NYCMA) is more diverse than the United States. Relative to the NYCMA, African American + Caucasian Americans are over-represented at Metro-North, while Asians and Hispanics are under-represented.
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-8-1.png)
+![center](/figs/mnremployee/unnamed-chunk-8-1.png)
 
 
 #### Hourly Wage by Ethnicity
@@ -114,23 +114,23 @@ m_3
 {% endhighlight %}
 
 It helps to plot the summary. First we plot the median by ethnicity and facet by age.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-11-1.png)
+![center](/figs/mnremployee/unnamed-chunk-11-1.png)
 
 Next, plot the medians grouped by ethnicity.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-12-1.png)
+![center](/figs/mnremployee/unnamed-chunk-12-1.png)
 
 Finally, faceting by race and plotting by age group reveals that the median wage for African American and Hispanic employees levels off at about 35 years old.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-13-1.png)
+![center](/figs/mnremployee/unnamed-chunk-13-1.png)
 
 A boxplot and a violin plot both reveal very long tails for Caucasian employees.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-14-1.png)
+![center](/figs/mnremployee/unnamed-chunk-14-1.png)
 
 For the violin plot, we drop American Indian and Other ethnic categories.
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-15-1.png)
+![center](/figs/mnremployee/unnamed-chunk-15-1.png)
 
 Highly paid corporates aside, how does the distribution look for the rest of MNR employees?
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-1.png)
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-16-2.png)
+![center](/figs/mnremployee/unnamed-chunk-16-1.png)
+![center](/figs/mnremployee/unnamed-chunk-16-2.png)
 
 
 
@@ -140,12 +140,12 @@ We can generate an ethnic heatmap using the ggmap and ggplot2 packages. I have b
 
 ##### Employee Location Overview
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-17-1.png)
+![center](/figs/mnremployee/unnamed-chunk-17-1.png)
 
 ##### New York City and New Jersey
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-18-1.png)
+![center](/figs/mnremployee/unnamed-chunk-18-1.png)
 
 ##### Poughkeepsie
 
-![center](http://iamthevastidledhitchhiker.github.io/figs/mnremployee/unnamed-chunk-19-1.png)
+![center](/figs/mnremployee/unnamed-chunk-19-1.png)
