@@ -9,6 +9,7 @@ tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Si
 
 #### Before we begin, a brief backstory...
 On my 7th birthday I received a copy of Simcity 2000 Special Edition for Macintosh. I spent a lot of time playing it until I received a copy of Simcity 4 (for PC). I skipped Simcity 3000, primarily due to the fact that my family's Macintosh LC 550 was incapable of running it. I would estimate that I logged about 1000 hours into both games. The amount of data lost due to the shear number of cities and regions that I abandoned and/or deleted breaks my heart a little. In order to keep my nostalgia in check, I'll end here and move on to the stuff people might actually care about...
+
 <br>  
 
 ## Prologue: Motivation & Challenges

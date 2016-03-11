@@ -3,7 +3,7 @@ layout: post
 title:  The Hitchhiker's Guide to TensorFlow Ep. 2
 subtitle: Char-RNN in TensorFlow
 author: keith
-date:   2016-03-12 16:00:00
+date:   2016-03-13 20:00:00
 tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Simulation, Hex Editing]
 ---
 ## What are Self-Organizing Maps?
