@@ -9,7 +9,7 @@ tags: [Machine Learning, Neural Networks, Data Science, Video Games, SimCity, Si
 [Go back to Episode I](/2015-12-29-exploring_simcity_pt1/)
 <br>
 
-##Looking Under the Hood - Continued
+## Looking Under the Hood - Continued
 In this post I will delve into the details of extracting useful information from our .SC2 file.
 
 Directly referencing David Moew's guide...
