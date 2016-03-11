@@ -234,7 +234,12 @@ footer {
 }
 
 footer a {
-  color: #000000;
+  color: #338D47;
+
+}
+
+footer a:hover {
+  color: #040404;
 }
 
 footer .list-inline {
