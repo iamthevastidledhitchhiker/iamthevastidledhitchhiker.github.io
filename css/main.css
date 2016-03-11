@@ -3,9 +3,9 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #545454;
+  color: #404040;
   position: relative;
   background: #FFF;
 }
@@ -26,7 +26,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #04A304;
+  color: #338D47;
 }
 blockquote {
   color: #808080;
@@ -61,7 +61,7 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #04A304;
+  background: #0085a1;
 }
 ::selection {
   color: white;
@@ -91,11 +91,52 @@ img {
   }
 }
 
+/* --- Hexagon --- */
+.hexagon {
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: #FFFFFF;
+  margin: 43.30px 0;
+  border-left: solid 5px #333333;
+  border-right: solid 5px #333333;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 16.9670px;
+}
+
+.hexagon:before {
+  top: -53.0330px;
+  border-top: solid 7.0711px #333333;
+  border-right: solid 7.0711px #333333;
+}
+
+.hexagon:after {
+  bottom: -53.0330px;
+  border-bottom: solid 7.0711px #333333;
+  border-left: solid 7.0711px #333333;
+}
+
+/* --- End Hexagon --- */
+
+
+
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #848484;
-  border-bottom: 1px solid #010101  ;
+  background: #404040;
+  border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -115,15 +156,15 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #040404;
+  color: #338D47;
 }
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
-    -webkit-transition: background .2s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .2s ease-in-out,padding .5s ease-in-out;
-    transition: background .2s ease-in-out,padding .5s ease-in-out;
+    padding: 0px 0;
+    -webkit-transition: background .2s ease-in-out,padding .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out,padding .2s ease-in-out;
+    transition: background .2s ease-in-out,padding .2s ease-in-out;
   }
 
   .navbar-custom.top-nav-short {
@@ -134,12 +175,12 @@ img {
 .navbar-custom .avatar-container {
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   left: 50%;
   width: 50px;
-  margin-top: -50px;
+  margin-top: -25px;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
@@ -186,7 +227,7 @@ img {
 
 footer {
   padding: 20px 0;
-  background: #848484;
+  background: #404040;
   border-top: 1px #FFFFFF solid;
   margin-top: 30px;
   font-size: 14px;
@@ -202,14 +243,14 @@ footer .list-inline {
 }
 footer .copyright {
   font-family: Open Sans;
+  color: #AAAAAA;
   text-align: center;
   margin-bottom: 0;
-  color: #FFFFFF;
 }
 footer .theme-by {
   text-align: center;
+  color: #AAAAAA;
   margin: 10px 0 0;
-  color: #FFFFFF;
 }
 
 @media only screen and (min-width: 768px) {
@@ -249,7 +290,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #047F04;
+  color: #338D47;
 }
 
 .post-preview .post-title {
@@ -263,7 +304,7 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #545454;
+  color: #808080;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
@@ -277,7 +318,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
 
@@ -291,8 +332,13 @@ header.header-page .page-heading {
   text-align: center;
 }
 
+.youtuber{
+  display: block;
+  margin: 0 auto;
+}
+
 header.header-post .post-heading h1 {
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 0;
 }
 
@@ -303,8 +349,8 @@ header.header-page .page-heading h1 {
 
 header.header-post .post-heading .post-subheading,
 header.header-page .page-heading .page-subheading {
-  font-size: 20px;
-  line-height: 0.8;
+  font-size: 24px;
+  line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -317,7 +363,7 @@ header.header-post .post-heading .post-subheading {
 
 @media only screen and (min-width: 768px) {
   header.header-post .post-heading h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -349,7 +395,7 @@ header.header-post .post-heading .post-subheading {
   padding: 10px 5px;
   background: #FFF;
   border-radius: 0;
-  color: #545454;
+  color: #404040;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
@@ -359,7 +405,7 @@ header.header-post .post-heading .post-subheading {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #047F04;
+  background: #338D47;
   border: 1px solid #047F04;
 }
 
@@ -379,36 +425,36 @@ header.header-post .post-heading .post-subheading {
 
 /* --- Tables --- */
 
-.blog-post table {
+table {
   padding: 0;
 }
-.blog-post table tr {
+table tr {
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
-.blog-post table tr:nth-child(2n) {
+table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
-.blog-post table tr th {
+table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
-.blog-post table tr td {
+table tr td {
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
-.blog-post table tr th :first-child,
-.blog-post table tr td :first-child {
+table tr th :first-child,
+table tr td :first-child {
   margin-top: 0;
 }
-.blog-post table tr th :last-child,
-.blog-post table tr td :last-child {
+table tr th :last-child,
+table tr td :last-child {
   margin-bottom: 0;
 }

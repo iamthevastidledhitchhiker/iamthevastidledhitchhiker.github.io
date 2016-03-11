@@ -28,8 +28,7 @@ avatar: "/img/avatar-keith.png"
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  About Me: "aboutme"
-  Author's home: "http://iamthevastidledhitchhiker.github.io"
+  #Author's home: "http://iamthevastidledhitchhiker.github.io"
 
 # --- Footer options --- #
 
@@ -48,15 +47,15 @@ author:
 footer-links-active:
   rss: true
   facebook: false
-  email: true
+  email: false
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"
+url-pretty: "about"
 
 # --- Misc --- #
 
@@ -74,6 +73,7 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:year-:month-:day-:title
 paginate: 5
+gems: [jekyll-paginate]
 
 # Default YAML values (more information on Jekyll's site)
 defaults:

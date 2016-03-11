@@ -40,6 +40,8 @@ db <- rename(db, "RACE" = DESCR50, "JOB_CAT_SHORT_01" = DESCRSHORT, "JOB_CAT_SHO
 
 
 
+
+
 ##Step 2: Exploring the Data
 
 After doing a lot of cleaning and geocoding we can use the ggplot2 package to first create some simple charts
